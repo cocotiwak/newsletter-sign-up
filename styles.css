@@ -821,6 +821,26 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-\[300px\] {
+  margin-top: 300px;
+}
+
+.mt-\[200px\] {
+  margin-top: 200px;
+}
+
+.mt-\[250px\] {
+  margin-top: 250px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -885,6 +905,10 @@ video {
   min-height: 0px;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-\[3\.23rem\] {
   width: 3.23rem;
 }
@@ -899,6 +923,18 @@ video {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .min-w-\[3\.23rem\] {
@@ -1107,6 +1143,10 @@ video {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -1127,6 +1167,10 @@ video {
   place-items: end;
 }
 
+.place-items-stretch {
+  place-items: stretch;
+}
+
 .content-center {
   align-content: center;
 }
@@ -1137,6 +1181,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-items-end {
@@ -1157,6 +1205,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-2 {
@@ -1458,6 +1510,14 @@ video {
   padding: var(--app-padding);
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1521,6 +1581,16 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -1593,6 +1663,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.text-putih {
+  --tw-text-opacity: 1;
+  color: hsla(0, 0%, 100%, var(--tw-text-opacity));
 }
 
 .text-opacity-10 {
@@ -2157,6 +2232,14 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2187,6 +2270,10 @@ video {
 
   .lg\:max-w-\[900px\] {
     max-width: 900px;
+  }
+
+  .lg\:max-w-\[400px\] {
+    max-width: 400px;
   }
 
   .lg\:grid-cols-\[200px\2c repeat\(auto-fill\2c minmax\(15\%\2c 100px\)\)\2c 300px\] {
@@ -2223,6 +2310,14 @@ video {
 
   .lg\:rounded-xl {
     border-radius: 0.75rem;
+  }
+
+  .lg\:rounded-full {
+    border-radius: 9999px;
+  }
+
+  .lg\:rounded-3xl {
+    border-radius: 1.5rem;
   }
 
   .lg\:bg-charcoalGrey {
