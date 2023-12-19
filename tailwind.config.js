@@ -7,12 +7,12 @@ module.exports = {
   theme: {
 
     extend: {
-      color: {
-        'Tomato': 'hsl(4, 100%, 67%)',
-        'DarkSlateGrey': 'hsl(234, 29%, 20%)',
-        'CharcoalGrey': 'hsl(235, 18%, 26%)',
-        'Abu': 'hsl(231, 7%, 60%)',
-        'Putih': 'hsl(0, 0%, 100%)'
+      colors: {
+        'tomato': 'hsl(4, 100%, 67%)',
+        'darkSlateGrey': 'hsl(234, 29%, 20%)',
+        'charcoalGrey': 'hsl(235, 18%, 26%)',
+        'abu': 'hsl(231, 7%, 60%)',
+        'putih': 'hsl(0, 0%, 100%)'
       },
       fontFamily: {
        'basic': ['Roboto','sans']
