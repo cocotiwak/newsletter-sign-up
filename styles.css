@@ -841,6 +841,10 @@ video {
   margin-top: 250px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1668,6 +1672,16 @@ video {
 .text-putih {
   --tw-text-opacity: 1;
   color: hsla(0, 0%, 100%, var(--tw-text-opacity));
+}
+
+.text-green-200 {
+  --tw-text-opacity: 1;
+  color: rgba(167, 243, 208, var(--tw-text-opacity));
+}
+
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgba(248, 113, 113, var(--tw-text-opacity));
 }
 
 .text-opacity-10 {

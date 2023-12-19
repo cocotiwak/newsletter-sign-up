@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .sembunyi {
+            display: none;
+        }
+    </style>
+
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <script src="scripts.js"></script>
     <title>Newsletter Sign Up</title>
 </head>
 <body>
+    
     <div class="lg:flex lg:min-w-full lg:justify-center bg-charcoalGrey lg:items-center lg:min-h-screen lg:place-items-center">
-    <div class="flex flex-col gap-6 lg:flex-row-reverse bg-putih lg:items-center lg:rounded-xl lg:max-w-[900px]">
-        <div class="lg:p-3">
+        <div class="flex flex-col gap-6 lg:flex-row-reverse bg-putih lg:items-center lg:rounded-xl lg:max-w-[900px]" id="containerSatu">
+            <div class="lg:p-3">
             <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" class="lg:hidden">
             <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="hidden lg:inline-block">
-        </div>
-        <div class="flex flex-col p-4 gap-3 lg:p-10">
+            </div>
+            <div class="flex flex-col p-4 gap-3 lg:p-10">
             <h1 class="font-basic text-3xl font-bold lg:text-5xl">Stay updated!</h1>
             <p class="font-basic text-basis">Join 60,000+ product managers receiving monthly updates on:</p>
             <ul class="flex font-basic text-basis flex-col gap-3">
@@ -25,22 +34,26 @@
                 <li class="flex gap-2"><span><img src="./assets/images/icon-list.svg" alt=""></span>Measuring to ensure updates are a success</li>
                 <li class="flex gap-2"><span><img src="./assets/images/icon-list.svg" alt=""></span>And much more!</li>
             </ul>
-            <p class="font-basic text-[11px] font-bold mt-4">Email address</p>
-            <input type="text" id="input-email" name="email" placeholder="email@company.com" class="flex border-2 p-2 rounded-lg font-basic text-basis">
-            <button class="font-basic text-basis bg-charcoalGrey text-white p-4 font-semibold rounded-lg hover:bg-tomato">Subscribe to monthly newsletter</button>
+            
+                <label for="inputEmail" class="font-basic text-[11px] font-bold mt-4">Email address</label>
+                <input type="text" id="inputEmail" name="email" placeholder="email@company.com" class="flex border-2 p-2 rounded-lg font-basic text-basis">
+                <button class="font-basic text-basis bg-charcoalGrey text-white p-4 font-semibold rounded-lg hover:bg-tomato mt-2" onclick="validateEmail()">Subscribe to monthly newsletter</button>
+            
+            
+            </div>
         </div>
-    </div>
-
-
-    <div class="bg-putih flex flex-col justify-between p-5 gap-5 lg:max-w-[400px] lg:rounded-3xl lg:p-6 hidden">
+    
+    
+    
+    <div class="bg-putih flex flex-col justify-between p-5 gap-5 lg:max-w-[400px] lg:rounded-3xl lg:p-6 hidden" id="containerDua">
         <img src="./assets/images/icon-success.svg" alt="" class="w-10 mt-[200px] lg:mt-0">
         <h1 class="font-basic text-4xl font-bold">Thanks for subscribing! </h1>
-        <p class="font-basic text-basis">A confirmation email has been sent to <span class="font-bold">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription. </p>
-        <button class="font-basic bg-charcoalGrey p-3 text-putih text-basis font-semibold mt-[200px] rounded-lg lg:mt-2 hover:bg-tomato">Dismiss message</button>
+        <p class="font-basic text-basis">A confirmation email has been sent to <span class="font-bold" id="alamatEmail"></span>. Please open it and click the button inside to confirm your subscription. </p>
+        <button type="button" class="font-basic bg-charcoalGrey p-3 text-putih text-basis font-semibold mt-[200px] rounded-lg lg:mt-2 hover:bg-tomato" onclick="validateEmail()">Dismiss message</button>
 
     </div>
     </div>
-
+    
     
 </body>
 </html>
