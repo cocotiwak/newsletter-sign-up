@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'tomato': 'hsl(4, 100%, 67%)',
+        'tomatoTransparent': 'hsla(4, 100%, 67%,0.5)',
         'darkSlateGrey': 'hsl(234, 29%, 20%)',
         'charcoalGrey': 'hsl(235, 18%, 26%)',
         'abu': 'hsl(231, 7%, 60%)',
