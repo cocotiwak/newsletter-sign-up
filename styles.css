@@ -1801,6 +1801,11 @@ video {
   transform: var(--tw-transform);
 }
 
+.hover\:bg-tomato:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsla(4, 100%, 67%, var(--tw-bg-opacity));
+}
+
 .hover\:\!text-center:hover {
   text-align: center !important;
 }
